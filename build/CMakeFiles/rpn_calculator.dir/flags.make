@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/tombilsina/rpn_calculator/include
 
-CXX_FLAGS = -g -std=gnu++20
+CXX_FLAGS = -std=c++20
 

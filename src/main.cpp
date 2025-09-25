@@ -1,5 +1,5 @@
+#include "../include/rpn.h"
 #include <iostream>
-#include "rpn.h"
 #include <stdexcept>
 int main() {
     std::string expression;
@@ -24,6 +24,7 @@ int main() {
         std::cerr << "Error: " << e.what() << std::endl;
         return 1;
     }
+
 
     return 0;
 }

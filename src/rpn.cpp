@@ -1,14 +1,11 @@
-
-
 #include "rpn.h"
+#include <iostream>
 #include <stdexcept>
 #include <sstream>
 #include <vector>
 #include <string>
 #include <cctype>
 #include <cmath>
-
-// Вспомогательная функция для разбиения строки на токены
 std::vector<std::string> tokenize(const std::string& expression) {
     std::vector<std::string> tokens;
     std::istringstream iss(expression);
@@ -20,8 +17,6 @@ std::vector<std::string> tokenize(const std::string& expression) {
 
     return tokens;
 }
-
-// Вспомогательная функция для проверки, является ли строка числом
 bool is_number(const std::string& s) {
     if (s.empty()) return false;
 
@@ -83,9 +78,6 @@ double evaluate_rpn(const std::string& expression) {
         }
     }
 
-    if (stack.size() != 1) {
-        throw std::invalid_argument("Invalid expression: too many operands");
-    }
-
-    return stack.top();
+    if (stack.size() != 1) throw std::invalid_argument("Invalid expression");
+return stack.top();
 }

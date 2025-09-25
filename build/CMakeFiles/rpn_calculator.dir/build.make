@@ -108,6 +108,7 @@ rpn_calculator_EXTERNAL_OBJECTS =
 rpn_calculator: CMakeFiles/rpn_calculator.dir/src/main.cpp.o
 rpn_calculator: CMakeFiles/rpn_calculator.dir/src/rpn.cpp.o
 rpn_calculator: CMakeFiles/rpn_calculator.dir/build.make
+rpn_calculator: librpn_lib.a
 rpn_calculator: CMakeFiles/rpn_calculator.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/tombilsina/rpn_calculator/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable rpn_calculator"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rpn_calculator.dir/link.txt --verbose=$(VERBOSE)
