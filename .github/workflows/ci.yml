@@ -16,8 +16,12 @@ jobs:
 
       - name: Configure and Build
         run: |
-          cmake -B build
-          cmake --build build --parallel 2
+          # Очищаем предыдущие сборки
+          rm -rf build
+          mkdir build
+          cd build
+          cmake ..
+          cmake --build . --parallel 2
 
       - name: Run Tests
         run: |
