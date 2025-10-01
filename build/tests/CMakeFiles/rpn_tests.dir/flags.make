@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tombilsina/rpn_calculator/include -isystem /home/tombilsina/rpn_calculator/build/_deps/googletest-src/googletest/include -isystem /home/tombilsina/rpn_calculator/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/tombilsina/rpn_calculator/include -I/home/tombilsina/rpn_calculator/tests/../include -isystem /home/tombilsina/rpn_calculator/build/_deps/googletest-src/googletest -isystem /home/tombilsina/rpn_calculator/build/_deps/googletest-src/googletest/include
 
-CXX_FLAGS = -std=c++20
+CXX_FLAGS = -std=gnu++17
 

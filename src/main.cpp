@@ -1,4 +1,4 @@
-#include "../include/rpn.h"
+#include "rpn.h"
 #include <iostream>
 #include <stdexcept>
 int main() {

@@ -1,10 +1,10 @@
-Start testing: Sep 25 12:50 MSK
+Start testing: Oct 01 22:36 MSK
 ----------------------------------------------------------
 1/1 Testing: rpn_tests
 1/1 Test: rpn_tests
 Command: "/home/tombilsina/rpn_calculator/build/tests/rpn_tests"
 Directory: /home/tombilsina/rpn_calculator/build/tests
-"rpn_tests" start time: Sep 25 12:50 MSK
+"rpn_tests" start time: Oct 01 22:36 MSK
 Output:
 ----------------------------------------------------------
 Running main() from /home/tombilsina/rpn_calculator/build/_deps/googletest-src/googletest/src/gtest_main.cc
@@ -13,25 +13,25 @@ Running main() from /home/tombilsina/rpn_calculator/build/_deps/googletest-src/g
 [----------] 5 tests from RPNTest
 [ RUN      ] RPNTest.BasicAddition
 [       OK ] RPNTest.BasicAddition (0 ms)
-[ RUN      ] RPNTest.ComplexExpression
-[       OK ] RPNTest.ComplexExpression (0 ms)
-[ RUN      ] RPNTest.DivisionByZero
-[       OK ] RPNTest.DivisionByZero (0 ms)
-[ RUN      ] RPNTest.InvalidExpression
-[       OK ] RPNTest.InvalidExpression (0 ms)
+[ RUN      ] RPNTest.BasicOperations
+[       OK ] RPNTest.BasicOperations (0 ms)
+[ RUN      ] RPNTest.InvalidInput
+[       OK ] RPNTest.InvalidInput (4 ms)
+[ RUN      ] RPNTest.SqrtFunction
+[       OK ] RPNTest.SqrtFunction (0 ms)
 [ RUN      ] RPNTest.SqrtInvalidInput
 [       OK ] RPNTest.SqrtInvalidInput (0 ms)
-[----------] 5 tests from RPNTest (0 ms total)
+[----------] 5 tests from RPNTest (4 ms total)
 
 [----------] Global test environment tear-down
-[==========] 5 tests from 1 test suite ran. (0 ms total)
+[==========] 5 tests from 1 test suite ran. (4 ms total)
 [  PASSED  ] 5 tests.
 <end of output>
-Test time =   0.01 sec
+Test time =   0.02 sec
 ----------------------------------------------------------
 Test Passed.
-"rpn_tests" end time: Sep 25 12:50 MSK
+"rpn_tests" end time: Oct 01 22:36 MSK
 "rpn_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 25 12:50 MSK
+End testing: Oct 01 22:36 MSK

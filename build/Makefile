@@ -172,19 +172,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named rpn_lib
-
-# Build rule for target.
-rpn_lib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 rpn_lib
-.PHONY : rpn_lib
-
-# fast build rule for target.
-rpn_lib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_lib.dir/build.make CMakeFiles/rpn_lib.dir/build
-.PHONY : rpn_lib/fast
-
-#=============================================================================
 # Target rules for targets named rpn_calculator
 
 # Build rule for target.
@@ -291,7 +278,6 @@ src/rpn.o: src/rpn.cpp.o
 
 # target to build an object file
 src/rpn.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_lib.dir/build.make CMakeFiles/rpn_lib.dir/src/rpn.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_calculator.dir/build.make CMakeFiles/rpn_calculator.dir/src/rpn.cpp.o
 .PHONY : src/rpn.cpp.o
 
@@ -300,7 +286,6 @@ src/rpn.i: src/rpn.cpp.i
 
 # target to preprocess a source file
 src/rpn.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_lib.dir/build.make CMakeFiles/rpn_lib.dir/src/rpn.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_calculator.dir/build.make CMakeFiles/rpn_calculator.dir/src/rpn.cpp.i
 .PHONY : src/rpn.cpp.i
 
@@ -309,7 +294,6 @@ src/rpn.s: src/rpn.cpp.s
 
 # target to generate assembly for a file
 src/rpn.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_lib.dir/build.make CMakeFiles/rpn_lib.dir/src/rpn.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/rpn_calculator.dir/build.make CMakeFiles/rpn_calculator.dir/src/rpn.cpp.s
 .PHONY : src/rpn.cpp.s
 
@@ -331,7 +315,6 @@ help:
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... rpn_calculator"
-	@echo "... rpn_lib"
 	@echo "... rpn_tests"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
