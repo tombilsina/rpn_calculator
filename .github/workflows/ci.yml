@@ -8,18 +8,20 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Получить всю историю Git
 
       - name: Install dependencies
         run: |
-            sudo apt-get update
-            sudo apt-get install -y cmake g++ libgtest-dev
+          sudo apt-get update
+          sudo apt-get install -y cmake g++ libgtest-dev
 
       - name: Configure and Build
         run: |
-            cmake -B build
-            cmake --build build --parallel 2
+          cmake -B build
+          cmake --build build --parallel 2
 
       - name: Run Tests
         run: |
-            cd build
-            ctest --output-on-failure
+          cd build
+          ctest --output-on-failure
